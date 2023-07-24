@@ -1,0 +1,268 @@
+/** {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    word-wrap: break-word;
+}
+
+body {
+    font-family: Montserrat, Arial;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #3f3b3b;
+}
+
+.container {
+    width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main {
+	background-position: top center;
+}
+
+.navbar{
+    height: 88px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+a{
+    color: #212121;
+    text-decoration: none;
+
+}
+
+.navbar .logo{
+    color: #212121;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+.navbar .navbar-link{
+    padding: 10px;
+}
+
+.link{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    flex-grow: 1;
+    justify-content: center;
+    padding-right: 90px;
+    padding-left: 90px;
+
+}
+.promo1-title {
+      font-family: Montserrat;
+      font-size: 40px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.2;
+      letter-spacing: -0.4px;
+      margin-bottom: 48px;
+    }
+*/
+
+a {
+    color: #212121;
+    text-decoration: none;
+}
+
+.icons {
+    flex: 1;
+    text-align: end;
+}
+
+.logo img{
+    height: 70px;
+}
+
+.hero {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/blog/fethiye.JPG);
+    background-repeat: no-repeat;
+    background-size: 1110px 800px;
+    background-position: center;
+    color: #fff;
+    gap: 20px;
+}
+
+.hero a{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    color: #fff;
+
+
+}
+
+
+.post-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog-post {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    margin-top: 48px;
+    width: 50%;
+} 
+.blog-post h5{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.blog-post img{
+    width: 350px;
+    height: 400px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+
+    .blog-post a {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 00;
+        font-size: 14px;
+        line-height: 24px;
+        color: #20232e;
+        margin-bottom: 10px;
+        //background-color: #496456;
+        //border-radius: 12px;
+        //padding: 6px;
+        //margin-right: 10px;
+    }
+
+.blog-post span{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #52647C;
+    text-align:right;
+}
+
+.blog-post p{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #52647C;
+    width: 350px;
+    margin-bottom: 10px;
+    text-align:justify;
+    margin-top: 10px;
+}*/
+
+/*Magaza CSS*/
+
+.navbar-magaza{
+    font-size: 24px;
+	display: flex;
+	gap: 40px;
+	align-items: center;
+	padding-left: 20px;
+	padding-right: 20px;
+
+
+}
+
+.navbar-magaza img{
+    width: 200px;
+    height: 80px;
+}
+
+.navbar-magaza .navbar-logo{
+    flex-grow: 1;
+	text-align: center;
+}
+
+.categori-group{
+    display: flex;
+}
+
+.categori-group img{
+    width: 260px;
+    height: 313px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+.categories h4{
+    margin-top: 50px;
+}
+
+/*header.masthead {*/
+/*    margin-bottom: 3rem;*/
+/*    padding-top: calc(8rem + 57px);*/
+/*    padding-bottom: 8rem;*/
+/*    background-color: #6c757d;*/
+/*    text-align: center;*/
+/*}*/
+/*.page-heading h1{*/
+/*    font-size: 5rem;*/
+/*    font-weight: 800;*/
+/*    line-height: 1.2;*/
+/*    color: #fff;*/
+/*}*/
+
+/*.page-heading .subheading{*/
+/*    font-size: 1.5rem;*/
+/*    font-weight: 300;*/
+/*    line-height: 1.1;*/
+/*    display: block;*/
+/*    margin-top: 0.625rem;*/
+/*    color: #fff;*/
+/*}*/
+
+/**, *::before, *::after {*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+/*.justify-content-center {*/
+/*    justify-content: center !important;*/
+/*}*/
+
+/*.contact .row{*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*}*/
+
+/*.contact p {*/
+/*    margin: 2rem 0;*/
+/*}*/
+
+/*.my-5 {*/
+/*    margin-top: 3rem !important;*/
+/*    margin-bottom: 3rem !important;*/
+/*}*/
+
+/*.form-floating {*/
+/*    position: relative;*/
+/*}*/
+
+.contact{
+    display: flex;
+}

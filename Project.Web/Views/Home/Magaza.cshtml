@@ -1,0 +1,105 @@
+﻿
+@{
+    Layout = null;
+}
+
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelShop</title>
+    <link rel="stylesheet" href="~/assets/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/assets/toastr/toastr.min.css" />
+    <link rel="stylesheet" href="~/assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h2 class="title">TravelShop</h2>
+@*      <ul class="menu filter">
+        <li>Çanta</li>
+        <li>Kamp</li>
+        <li>Seyahat</li>
+        <li>Şapka</li>
+      </ul>*@
+      <ul class="menu__icons">
+        <li><a href="/"><i class="fa-solid fa-house"></i></a></li>
+       @* <li><i class="fa-solid fa-magnifying-glass"></i></li>*@
+        <li class="basket__icon" onclick="toogleModal()">
+            <i class="fa-solid fa-cart-shopping"></i>
+          <span class="basket__count"></span>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="slider">
+
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/assets/img/slide1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/img/slide2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/img/slide3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </div>
+
+    <div class="store my-5">
+      <div class=""></div>
+@*      <ul class="filter">
+        <li>Tümü</li>
+        <li>Kitap</li>
+        <li>Çanta</li>
+      </ul>*@
+        <ul class="menu filter" style="background-color:; justify-content:center">
+         <li>Tümü</li>
+         <li>Çanta</li>
+         <li>Kamp</li>
+         <li>Seyahat</li>
+         <li>Şapka</li>
+      </ul>
+      <div class="row book__list" style="justify-content:center">
+        
+      </div>
+    </div>
+    
+    <div class="basket__modal">
+      <div class="basket__items">
+        <i class="bi bi-x" onclick="toogleModal()"></i>
+        <h4 class="basket__title">Sepetim</h4>
+        <ul class="basket__list">
+          <li class="basket__item">Sepette Ürün Yok</li>
+        </ul>
+        <div class="basket__total">
+          <span class="fw-bold mb-1 fs-4 total__price"></span>
+          <!-- <button class="btn__purple mb-1">ALIŞVERİŞE DEVAM ET</button> -->
+          <button class="btn__purple" id="odemeEkraniBtn">ÖDEME</button>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="text/javascript"
+            src="~/assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/assets/lib/jquery/dist/jquery.min.js"></script>
+
+    <script src="~/assets/toastr/toastr.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/app.js"></script>
+
+  
+  </body>
+</html>

@@ -1,0 +1,277 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelShop</title>
+    <link rel="stylesheet" href="/assets/css/checkout.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+</head>
+<body>
+    <div id="page" class="site page-cart">
+        <main>
+
+           <div class="single-checkout">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="checkout flexwrap">
+                            <div class="item left styled">
+                                <h1>Teslimat Bilgileri</h1>
+                                <form action="">
+                                    <p>
+                                        <label for="email">Email Adresi <span></span></label>
+                                        <input type="email" name="email" id="email" autocomplete="off" required>
+                                    </p>
+                                    <p>
+                                        <label for="fname">İsim <span></span></label>
+                                        <input type="text" id="fname" required>
+                                    </p>
+                                    <p>
+                                        <label for="lname">Soyisim <span></span></label>
+                                        <input type="text" id="lname" required>
+                                    </p>
+                                    <p>
+                                        <label for="cname">Şirket Adı</label>
+                                        <input type="text" id="cname">
+                                    </p>
+                                    <p>
+                                        <label for="adress">Sokak Adı <span></span></label>
+                                        <input type="text" id="adress" required>
+                                    </p>
+                                    <p>
+                                        <label for="city">Şehir <span></span></label>
+                                        <input type="text" id="city" required>
+                                    </p>
+                                    <p>
+                                        <label for="postal">Posta Kodu <span></span></label>
+                                        <input type="number" id="postal" required>
+                                    </p>
+                                    <p>
+                                        <label for="phone">Telefon Numarası <span></span></label>
+                                        <input type="number" id="phone" required>
+                                    </p>
+                                    <p>
+                                        <label>Sipariş Notu (opsiyonel)</label>
+                                        <textarea cols="30" rows="10"></textarea>
+                                    </p>
+                                    <p class="checkset">
+                                        <input type="checkbox" id="anaccount">
+                                        <label for="anaccount">Hesap oluşturmak için tıklayınız.</label>
+                                    </p>
+                                </form>
+                                <div class="shipping-methods">
+                                    <h2>Kargo</h2>
+                                    <p class="checkset">
+                                        <input type="radio" checked>
+                                        <label>Yurtiçi Kargo ücretsiz</label>
+                                    </p>
+                                </div>
+                                <div class="primary-checkout">
+                                    <button class="primary-button">Ödeme Yap</button>
+                                </div>
+                            </div>
+                            <div class="item right">
+                                <h2>Sipariş Detayları</h2>
+                                <div class="summary-order is_sticky">
+                                    <div class="summary-totals">
+                                        <ul>
+                                            <li>
+                                                <span>Toplam Tutar</span>
+                                                <span>2155.95</span>
+                                            </li>
+                                            <li>
+                                                <span>İndirim</span>
+                                                <span>-100</span>
+                                            </li>
+                                            <li>
+                                                <span>Kargo Bedeli</span>
+                                                <span>0</span>
+                                            </li>
+                                            <li>
+                                                <span>Total</span>
+                                                <strong>2055.95</strong>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <ul class="products mini">
+                                        <li class="item">
+                                            <div class="thumbnail object-cover">
+                                                <img src="/assets/" alt="">
+                                            </div>
+                                            <div class="item-content">
+                                                <p>Çadır</p>
+                                                <span class="price">
+                                                    <span>579.00</span>
+                                                    <span>x 2</span>
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="thumbnail object-cover">
+                                                <img src="assets/img/urunler/beyaz-bavul.jpg" alt="">
+                                            </div>
+                                            <div class="item-content">
+                                                <p>Seyahat Günlüğü</p>
+                                                <span class="price">
+                                                    <span>279.00</span>
+                                                    <span>x 2</span>
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="thumbnail object-cover">
+                                                <img src="assets/img/urunler/harita.jpg" alt="">
+                                            </div>
+                                            <div class="item-content">
+                                                <p>Kamp Lambası</p>
+                                                <span class="price">
+                                                    <span>179.00</span>
+                                                    <span>x 2</span>
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="thumbnail object-cover">
+                                                <img src="assets/img/urunler/emaye-bardak.jpg" alt="">
+                                            </div>
+                                            <div class="item-content">
+                                                <p>Uyku Tulumu</p>
+                                                <span class="price">
+                                                    <span>279.00</span>
+                                                    <span>x 2</span>
+                                                </span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+
+        </main>
+        <!-- Main -->
+
+        <div class="menu-bottom desktop-hide">
+            <div class="container">
+                <div class="wrapper">
+                    <nav>
+                        <ul class="flexitem">
+                            <li>
+                                <a href="#">
+                                    <i class="ri-bar-chart-line"></i>
+                                    <span>Trending</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="ri-user-6-line"></i>
+                                    <span>Account</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="ri-heart-line"></i>
+                                    <span>Wishlist</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#0" class="t-search">
+                                    <i class="ri-search-line"></i>
+                                    <span>Search</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#0" class="cart-trigger">
+                                    <i class="ri-shopping-cart-line"></i>
+                                    <span>Cart</span>
+                                    <div class="fly-item">
+                                        <span class="item-number">0</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- menu bottom -->
+
+        <div class="search-bottom desktop-hide">
+            <div class="container">
+                <div class="wrapper">
+                    <form action="" class="search">
+                        <a href="#" class="t-close search-close flexcenter"><i class="ri-close-line"></i></a>
+                        <span class="icon-large"><i class="ri-search-line"></i></span>
+                        <input type="search" placeholder="Search" required>
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- search bottom -->
+
+        <div id="modal" class="modal">
+            <div class="content flexcol">
+                <div class="image object-cover">
+                    <img src="assets/img/ajanda.png" alt="">
+                </div>
+                <h2>Get the latest deals and coupons</h2>
+                <p class="mobile-hide">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, quam animi aspernatur quasi voluptatibus laudantium.</p>
+                <form action="" class="search">
+                    <span class="icon-large"><i class="ri-mail-line"></i></span>
+                    <input type="mail" placeholder="Your email address">
+                    <button>Subscribe</button>
+                </form>
+                <a href="#" class="mini-text">Do not show me this again</a>
+                <a href="#" class="t-close modalclose flexcenter">
+                    <i class="ri-close-line"></i>
+                </a>
+            </div>
+        </div>
+        <!-- Modal -->
+
+        <div class="backtotop">
+            <a href="#" class="flexcol">
+                <i class="ri-arrow-up-line"></i>
+                <span>Top</span>
+            </a>
+        </div>
+
+        <div class="overlay"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.js"></script>
+    <script src="script.js"></script>
+    <script>
+        const FtoShow = '.filter';
+        const Fpopup = document.querySelector(FtoShow);
+        const Ftrigger = document.querySelector('.filter-trigger');
+
+        Ftrigger.addEventListener('click', () => {
+            setTimeout(() => {
+                if(!Fpopup.classList.contains('show')) {
+                    Fpopup.classList.add('show')
+                }
+            }, 250 )
+        })
+
+        //auto close by click outside .filter
+        document.addEventListener('click', (e) => {
+            const isClosest = e.target.closest(FtoShow);
+            if(!isClosest && Fpopup.classList.contains('show')) {
+                Fpopup.classList.remove('show')
+            }
+        })
+    </script>
+</body>
+
+</html>

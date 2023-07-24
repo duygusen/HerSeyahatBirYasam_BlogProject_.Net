@@ -1,0 +1,81 @@
+﻿@{
+    ViewData["Title"] = "İletişim";
+}
+
+@section Styles {
+    <link href="~/backup/css/site.css" rel="stylesheet" />
+}
+
+
+<!-- Page Header
+<header class="masthead">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="page-heading">
+                    <h1>@ViewData["Title"]</h1>
+                    <span class="subheading">Sorularınız mı var? Gönderin cevaplayalım</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>-->
+
+<!-- Main Content-->
+<main class="contact mb-4">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="my-5">
+                    <div class="masthead my-5">
+                        <div class="page-heading">
+                            <h1>@ViewData["Title"]</h1>
+                            <span class="subheading">Sorularınız mı var? Gönderin cevaplayalım</span>
+                        </div>
+                    </div>
+
+                    <form id="contactForm" method="post" autocomplete="off">
+                        <div class="form-floating">
+                            <input class="form-control" id="name" name="Name" type="text" placeholder="Adınızı girin..." required />
+                            <label for="name">Ad Soyad</label>
+                        </div>
+                        <div class="form-floating">
+                            <input class="form-control" id="email" type="email" name="Email" placeholder="E-posta adresinizi girin..." required />
+                            <label for="email">E-Posta Adresi</label>
+                        </div>
+                        <div class="form-floating">
+                            <input class="form-control" id="phone" type="tel" name="Phone" inputmode="numeric" placeholder="Telefon numaranızı girin..." required />
+                            <label for="phone">Telefon Numarası</label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" id="message" name="Message" placeholder="Mesajınızı girin..." style="height: 12rem" required></textarea>
+                            <label for="message">Mesaj</label>
+                        </div>
+                        <br/>
+                        <button class="btn btn-primary text-uppercase" id="submitButton" type="submit">Gönder</button>
+                        <br />
+                        <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center mb-3">
+                                <div class="fw-bolder">Mesajınız gönderildi</div>
+                                En kısa sürede geri dönüş yapacağım
+                            </div>
+                        </div>
+                        <!-- an error submitting the form-->
+                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Mesajınız gönderilemedi daha sonra tekrar deneyin.</div></div>
+                        <!-- Submit Button-->
+
+                        <input type="hidden" name="ReCaptchaToken">
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfPznQmAAAAAOb7ZvdXXRVti9eYgk31XDl7raRb"></script>
+    <script src="~/assets/js/imask.js"></script>
+    <script src="~/assets/js/form.js"></script>
+}
